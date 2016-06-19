@@ -41,3 +41,14 @@ h2 {
 h1 {
     font-size: $modular-scale-3;
 }
+
+a:hover, a:active {
+    color: $orange;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+//page setup
+body {
+    background-color: $white;
+}
