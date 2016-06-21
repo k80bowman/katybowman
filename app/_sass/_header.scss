@@ -5,7 +5,7 @@
 }
 
 .logo {
-    background-color: #fefefa;
+    background-color: $offwhite;
     height: 75px;
     width: 75px;
     border-radius: 100px;
@@ -18,21 +18,21 @@
     li a {
         font-family: "Oswald", sans-serif;
         font-size: 1.618em;
-        color: #fefefa;
+        color: $offwhite;
         text-shadow: 0 1px 2px rgba(0,0,0,.25);
         text-decoration: none;
     }
 
     li a:hover {
-        color: #fefefa;
+        color: offwhite;
         text-shadow: 0 1px 2px rgba(0,0,0,0.25);
-        border-bottom: 2px solid #DE6B20;
+        border-bottom: 2px solid $orange;
     }
 }
 
 .name {
     font-family: "Oswald", sans-serif;
-    color: #fefefa;
+    color: $offwhite;
     text-shadow: 0 1px 2px rgba(0,0,0,.25);
     text-align: center;
     margin: 0.25em 0;
@@ -45,7 +45,7 @@
 
 .site-header {
     width: 100%;
-    background-color: #8EAC7B;
+    background-color: $light-green;
     overflow: auto;
 }
 
