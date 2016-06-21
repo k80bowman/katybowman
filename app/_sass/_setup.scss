@@ -22,12 +22,11 @@ body, p, li, a {
     font-family: $body-stack;
     font-size: $base-font-size;
     color: $base-font-color;
-    line-height: 1.5;
+    line-height: 1.15;
 }
 
 h3, h2, h1 {
     font-family: $heading-stack;
-    line-height: 1.5;
 }
 
 h3 {

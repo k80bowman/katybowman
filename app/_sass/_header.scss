@@ -1,0 +1,80 @@
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo {
+    background-color: #fefefa;
+    height: 75px;
+    width: 75px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 1em auto 0 auto;
+    position: relative;
+}
+
+.menu {
+    li a {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.618em;
+        color: #fefefa;
+        text-shadow: 0 1px 2px rgba(0,0,0,.25);
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: #fefefa;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+        border-bottom: 2px solid #DE6B20;
+    }
+}
+
+.name {
+    font-family: "Oswald", sans-serif;
+    color: #fefefa;
+    text-shadow: 0 1px 2px rgba(0,0,0,.25);
+    text-align: center;
+    margin: 0.25em 0;
+}
+
+.owl {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.site-header {
+    width: 100%;
+    background-color: #8EAC7B;
+    overflow: auto;
+}
+
+ul.nav {
+    width: 300px;
+    list-style: none;
+    overflow: hidden;
+    margin: -80px auto 0 auto;
+    padding: 0;
+    text-align: center;
+
+    li {
+        width: 100px;
+        float: left;
+    }
+
+    li:nth-child(1) {
+	    margin: 0.75em 100px 0 0;
+    }
+
+    li:nth-child(2) {
+	    margin: 0.75em 0px 0 0;
+    }
+
+    li:nth-child(3) {
+	    margin: 1em 100px 0 0;
+    }
+
+    li:nth-child(4) {
+	    margin: 1em 0 0 0;
+    }
+}
