@@ -4,29 +4,34 @@ layout: default
 
 <div class="home">
     <div class="primary">
-        <p class="type">Book Review</p>
-        <h2 class="primary-title">The Wake: A Novel</h2>
+        {% for post in site.posts limit:1 %}
+        <p class="type">{{ post.category }}</p>
+        <h2 class="primary-title">{{ post.title }}</h2>
         <div class="primary-img-quote">
-            <img class= "primary-image" src = "/images/the_wake.jpg" alt="The Wake">
-            <p class="primary-quote">Powerless, damaged, and damned, Buccmaster of Holland is an unsettling character and his story is as disturbingly human as they come.</p>
+            <img class= "primary-image" src = {{ post.image }} alt="{{ post.title }}">
+            <p class="primary-quote">{{ post.excerpt }}</p>
         </div>
         <hr class="line">
-        <div class="primary-link"><a href="http://www.washingtonindependentreviewofbooks.com/bookreview/the-wake-a-novel">Washington Independent Review of Books</a></div>
+        <div class="primary-link"><a href="{{ post.link }}">{{ post.publication }}</a></div>
+        {% endfor %}
     </div>
 
-  <!--<h1 class="page-heading">Posts</h1>
+    <div class="secondary">
+        <ul class="post-list">
+          {% for post in site.posts %}
+          {% if forloop.index > 1 %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+            </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
   -->
