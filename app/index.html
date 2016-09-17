@@ -6,33 +6,31 @@ layout: default
     <div class="primary">
         {% for post in site.posts limit:1 %}
         <p class="type">{{ post.category }}</p>
-        <h2 class="primary-title">{{ post.title }}</h2>
+        <h2 class="primary-title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
         <div class="primary-img-quote">
             <img class= "primary-image" src = {{ post.image }} alt="{{ post.title }}">
             <p class="primary-quote">{{ post.excerpt }}</p>
         </div>
         <hr class="line">
-        <div class="primary-link"><a href="{{ post.link }}">{{ post.publication }}</a></div>
+        <div class="pub-link"><a href="{{ post.link }}">{{ post.publication }}</a></div>
         {% endfor %}
     </div>
 
     <div class="secondary">
         <ul class="post-list">
-          {% for post in site.posts %}
+          {% for post in site.posts limit:5 %}
           {% if forloop.index > 1 %}
             <li>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
+                <p class="type">{{ post.category }}</p>
+                <h3>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h3>
+                <p class="secondary-quote">{{ post.excerpt }}</p>
+                <hr class="line">
+                <div class="pub-link"><a href="{{ post.link }}">{{ post.publication }}</a></div>
             </li>
           {% endif %}
           {% endfor %}
         </ul>
     </div>
-
-
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  -->
 </div>

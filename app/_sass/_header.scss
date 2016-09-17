@@ -27,7 +27,7 @@
         text-align: center;
 
         li a {
-            font-family: "Oswald", sans-serif;
+            font-family: $heading-stack;
             font-size: 1.618em;
             color: $offwhite;
             text-shadow: 0 1px 2px rgba(0,0,0,.25);
@@ -47,7 +47,7 @@
 }
 
 .name {
-    font-family: "Oswald", sans-serif;
+    font-family: $heading-stack;
     color: $offwhite;
     text-shadow: 0 1px 2px rgba(0,0,0,.25);
     text-align: center;
