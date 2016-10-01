@@ -11,8 +11,8 @@ layout: default
             <img class= "primary-image" src = {{ post.image }} alt="{{ post.title }}">
             <p class="primary-quote">{{ post.excerpt }}</p>
         </div>
-        <hr class="line">
         <div class="pub-link"><a href="{{ post.link }}">{{ post.publication }}</a></div>
+        <hr class="line">
         {% endfor %}
     </div>
 
@@ -26,8 +26,8 @@ layout: default
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h3>
                 <p class="secondary-quote">{{ post.excerpt }}</p>
-                <hr class="line">
                 <div class="pub-link"><a href="{{ post.link }}">{{ post.publication }}</a></div>
+                <hr class="line">
             </li>
           {% endif %}
           {% endfor %}

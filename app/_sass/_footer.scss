@@ -1,0 +1,38 @@
+.site-footer {
+    width: 100%;
+    background-color: $light-green;
+    overflow: auto;
+
+    .footer__menu {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+
+            li a {
+                margin: 10px;
+                font-family: $heading-stack;
+                font-size: 1.5em;
+                color: $base-font-color
+            }
+        }
+    }
+
+    .contact {
+        .contact__link {
+            margin: 10px 20px;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        margin: 10px auto;
+
+        p {
+            font-family: $body-stack;
+            color: $base-font-color;
+        }
+    }
+}
