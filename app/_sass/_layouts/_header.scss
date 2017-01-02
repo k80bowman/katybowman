@@ -39,17 +39,6 @@
             border-bottom: 2px solid $orange;
         }
     }
-
-    @media (min-width: $tablet-portrait-width) {
-        ul {
-            flex-flow: row nowrap;
-            width: 80%;
-
-            .middle {
-                width: 200px;
-            }
-        }
-    }
 }
 
 .name {

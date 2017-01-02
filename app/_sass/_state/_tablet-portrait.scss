@@ -1,0 +1,16 @@
+//media breakpoint
+$tablet-portrait-width: 600px;
+
+@media (min-width: $tablet-portrait-width) {
+//header
+    .menu {
+        ul {
+            flex-flow: row nowrap;
+            width: 80%;
+
+            .middle {
+                width: 200px;
+            }
+        }
+    }
+}

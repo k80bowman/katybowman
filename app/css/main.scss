@@ -4,8 +4,12 @@
 @charset "utf-8";
 
 @import
-    "setup",
-    "footer",
-    "header",
-    "home"
+    "_base/setup",
+    "_layouts/footer",
+    "_layouts/header",
+    "_layouts/home",
+    "_state/tablet-portrait",
+    "_state/tablet-landscape",
+    "_state/desktop"
+
 ;
