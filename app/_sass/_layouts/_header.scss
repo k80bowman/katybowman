@@ -25,8 +25,13 @@
         width: 90%;
         height: 75px;
         margin: -75px auto 0 auto;
+        justify-content: center;
         align-content: space-between;
-        justify-content: space-between;
+
+        li {
+            flex-basis: 90px;
+            //flex-grow: 1;
+        }
 
         li a {
             font-family: $heading-stack;

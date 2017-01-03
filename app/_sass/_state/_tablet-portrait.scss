@@ -1,15 +1,17 @@
 //media breakpoint
-$tablet-portrait-width: 600px;
+$tablet-portrait: "(min-width: 600px)";
 
-@media (min-width: $tablet-portrait-width) {
+@media #{$tablet-portrait} {
 //header
-    .menu {
-        ul {
-            flex-flow: row nowrap;
-            width: 80%;
+    .site-header {
+        .menu {
+            ul {
+                flex-flow: row nowrap;
+                width: 80%;
 
-            .middle {
-                width: 200px;
+                .middle {
+                    flex-grow: 2;
+                }
             }
         }
     }
