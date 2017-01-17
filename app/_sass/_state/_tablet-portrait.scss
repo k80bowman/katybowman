@@ -18,6 +18,9 @@ $tablet-portrait: "(min-width: 600px)";
                 }
             }
         }
+        .contact {
+            width: 20%;
+        }
     }
 
     .home {
@@ -26,11 +29,16 @@ $tablet-portrait: "(min-width: 600px)";
 
     .site-footer {
         .footer__menu {
+            width: 50%;
             ul {
                 li a {
                     font-size: $modular-scale-1;
+                    //margin: 25px;
                 }
             }
+        }
+        .contact {
+            width: 20%;
         }
     }
 }

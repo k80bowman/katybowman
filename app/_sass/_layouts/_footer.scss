@@ -4,15 +4,17 @@
     overflow: auto;
 
     .footer__menu {
+        width: 80%;
+        margin: 10px auto;
         ul {
             list-style: none;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;;
             align-items: center;
             height: 40px;
 
             li a {
-                margin: 10px;
+                //margin: 10px;
                 font-family: $heading-stack;
                 font-size: 1.25em;
                 color: $base-font-color
@@ -21,14 +23,16 @@
     }
 
     .contact {
-        .contact__link {
-            margin: 10px 20px;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 25%;
+        margin: 0 auto;
     }
 
     .copyright {
         text-align: center;
-        margin: 10px auto;
+        margin: 15px auto;
 
         p {
             font-family: $body-stack;
