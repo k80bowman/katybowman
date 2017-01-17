@@ -8,9 +8,27 @@ $tablet-portrait: "(min-width: 600px)";
             ul {
                 flex-flow: row nowrap;
                 width: 80%;
+                justify-content: space-between;
 
+                .side {
+                    flex-basis: 12.5%;
+                }
                 .middle {
-                    flex-grow: 2;
+                    flex-basis: 25%
+                }
+            }
+        }
+    }
+
+    .home {
+        width: 80%;
+    }
+
+    .site-footer {
+        .footer__menu {
+            ul {
+                li a {
+                    font-size: $modular-scale-1;
                 }
             }
         }
