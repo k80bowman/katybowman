@@ -3,31 +3,31 @@ layout: default
 ---
 
 <div class="home">
-    <div class="primary">
+    <div class="home__primary">
         {% for post in site.posts limit:1 %}
-        <p class="type">{{ post.category }}</p>
-        <h2 class="primary-title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
-        <div class="primary-img-quote">
-            <img class= "primary-image" src = {{ post.image }} alt="{{ post.title }}">
-            <p class="primary-quote">{{ post.excerpt }}</p>
+        <p class="home--type">{{ post.category }}</p>
+        <h2 class="home__primary--title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+        <div class="home__primary--imgQuote">
+            <img class= "home__primary--image" src = {{ post.image }} alt="{{ post.title }}">
+            <p class="home__primary--quote">{{ post.excerpt }}</p>
         </div>
-        <div class="pub-link"><a href="{{ post.link }}">{{ post.publication }}</a></div>
-        <hr class="line">
+        <div class="home--pubLink"><a href="{{ post.link }}">{{ post.publication }}</a></div>
+        <hr>
         {% endfor %}
     </div>
 
-    <div class="secondary">
-        <ul class="post-list">
+    <div class="home__secondary">
+        <ul class="home__postList">
           {% for post in site.posts limit:5 %}
           {% if forloop.index > 1 %}
             <li>
-                <p class="type">{{ post.category }}</p>
-                <h3>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <p class="home--type">{{ post.category }}</p>
+                <h3 class="home__secondary--title">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h3>
-                <p class="secondary-quote">{{ post.excerpt }}</p>
-                <div class="pub-link"><a href="{{ post.link }}">{{ post.publication }}</a></div>
-                <hr class="line">
+                <p class="home__secondary--quote">{{ post.excerpt }}</p>
+                <div class="home--pubLink"><a href="{{ post.link }}">{{ post.publication }}</a></div>
+                <hr>
             </li>
           {% endif %}
           {% endfor %}

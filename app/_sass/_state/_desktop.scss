@@ -33,5 +33,34 @@ $desktop-width: "(min-width: 1200px)";
 
     .home {
         width: 60%;
+
+        &--type {
+            margin: 10px 20px;
+        }
+
+        &--pubLink, p {
+            font-size: 16px;
+        }
+
+        &__primary {
+            &--image {
+                width: 100px;
+                margin: 10px 20px 10px 0;
+            }
+
+            &--imgQuote {
+                margin: 20px 0;
+            }
+
+            &--quote {
+                padding-top: 20px;
+            }
+        }
+
+        &__secondary {
+            &--quote {
+                padding: 20px;
+            }
+        }
     }
 }
