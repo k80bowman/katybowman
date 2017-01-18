@@ -78,10 +78,6 @@ body {
         text-align: center;
         display: inline-block;
 
-        &:hover {
-            background-color: $orange;
-        }
-
         svg {
             width: 30px;
             vertical-align: middle;
@@ -93,4 +89,12 @@ body {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+}
+
+.icon {
+    fill: $base-font-color;
+
+    &:hover {
+        fill: $orange;
+    }
 }
