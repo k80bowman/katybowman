@@ -1,2 +1,25 @@
 //media breakpoint
-$tablet-landscape-width: 900px;
+$tablet-landscape-width: "(min-width: 900px)";
+
+@media #{$tablet-landscape-width} {
+    .contact {
+        width: 15%;
+    }
+
+    .site-header {
+        .name {
+            margin: 30px 0;
+        }
+    }
+
+    .home {
+        width: 70%;
+    }
+
+    .site-footer {
+        .footer__menu {
+            margin: 20px auto;
+        }
+    }
+
+}

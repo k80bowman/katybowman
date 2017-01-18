@@ -13,21 +13,16 @@
             align-items: center;
             height: 40px;
 
-            li a {
-                //margin: 10px;
+            a {
                 font-family: $heading-stack;
                 font-size: 1.25em;
-                color: $base-font-color
+                color: $base-font-color;
+
+                &:hover {
+                    border-bottom: 2px solid $orange;
+                }
             }
         }
-    }
-
-    .contact {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 25%;
-        margin: 0 auto;
     }
 
     .copyright {

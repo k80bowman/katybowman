@@ -3,6 +3,10 @@ $tablet-portrait: "(min-width: 600px)";
 
 @media #{$tablet-portrait} {
 //header
+    .contact {
+        width: 20%;
+    }
+
     .site-header {
         .menu {
             ul {
@@ -18,9 +22,6 @@ $tablet-portrait: "(min-width: 600px)";
                 }
             }
         }
-        .contact {
-            width: 20%;
-        }
     }
 
     .home {
@@ -33,12 +34,8 @@ $tablet-portrait: "(min-width: 600px)";
             ul {
                 li a {
                     font-size: $modular-scale-1;
-                    //margin: 25px;
                 }
             }
-        }
-        .contact {
-            width: 20%;
         }
     }
 }

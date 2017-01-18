@@ -1,2 +1,37 @@
 //media breakpoint
-$desktop-width: 1200px;
+$desktop-width: "(min-width: 1200px)";
+
+@media #{$desktop-width} {
+    h1 {
+        font-size: $modular-scale-4;
+    }
+
+    .contact {
+        width: 10%;
+    }
+
+    .site-header {
+        .logo {
+            height: 100px;
+            width: 100px;
+        }
+
+        .owl {
+            width: 70px;
+        }
+
+        .menu {
+            ul {
+                width: 60%;
+
+                li a {
+                    font-size: $modular-scale-2;
+                }
+            }
+        }
+    }
+
+    .home {
+        width: 60%;
+    }
+}

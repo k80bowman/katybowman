@@ -37,12 +37,6 @@ a {
     text-decoration: none;
     color: $dark-green;
     font-weight: normal;
-
-    :hover, :active {
-        color: $orange;
-        text-decoration: none;
-        font-weight: normal;
-    }
 }
 
 h1, h2, h3 {
@@ -67,4 +61,36 @@ h3 {
 //page setup
 body {
     background-color: $offwhite;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    margin: 0 auto;
+
+    &__link {
+        background-color: $offwhite;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        text-align: center;
+        display: inline-block;
+
+        &:hover {
+            background-color: $orange;
+        }
+
+        svg {
+            width: 30px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
