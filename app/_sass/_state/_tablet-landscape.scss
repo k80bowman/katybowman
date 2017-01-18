@@ -22,4 +22,18 @@ $tablet-landscape-width: "(min-width: 900px)";
         }
     }
 
+    .myStory {
+        &__picture {
+            flex-basis: 40%;
+
+            img {
+                width: 300px;
+            }
+        }
+
+        &__story {
+            flex-basis: 60%;
+        }
+    }
+
 }
