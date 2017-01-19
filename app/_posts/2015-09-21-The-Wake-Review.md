@@ -2,7 +2,8 @@
 layout: post
 title: "The Wake: A Novel"
 date: 2015-09-21
-category: Book Review
+type: Book Review
+category: work
 publication: "Washington Independent Review of Books"
 link: http://www.washingtonindependentreviewofbooks.com/bookreview/the-wake-a-novel
 image: /images/the_wake.jpg

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="myWork">
+    <h2>My Work</h2>
+
+    <div class="myWork__work">
+        <div class="articles">
+            {% for post in site.posts %}
+            {% if post.category == 'work' %}
+            <p class="articles--type">{{ post.type }}</p>
+            <h3 class="articles--title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+            <p class="articles--quote">{{ post.excerpt }}</p>
+            <div class="articles--pubLink"><a href="{{ post.link }}">{{ post.publication }}</a></div>
+            <hr>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

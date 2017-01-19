@@ -6,6 +6,8 @@ $desktop-width: "(min-width: 1200px)";
         font-size: $modular-scale-4;
     }
 
+
+
     .contact {
         width: 10%;
     }
@@ -34,14 +36,6 @@ $desktop-width: "(min-width: 1200px)";
     .home {
         width: 60%;
 
-        &--type {
-            margin: 10px 20px;
-        }
-
-        &--pubLink, p {
-            font-size: 16px;
-        }
-
         &__primary {
             &--image {
                 width: 100px;
@@ -56,11 +50,19 @@ $desktop-width: "(min-width: 1200px)";
                 padding-top: 20px;
             }
         }
+    }
 
-        &__secondary {
-            &--quote {
-                padding: 20px;
-            }
+    .articles {
+        &--type {
+            margin: 10px 20px;
+        }
+
+        &--pubLink, p {
+            font-size: 16px;
+        }
+
+        &--quote {
+            padding: 20px;
         }
     }
 
@@ -78,6 +80,14 @@ $desktop-width: "(min-width: 1200px)";
                 font-size: 16px;
                 margin: 20px auto;
             }
+        }
+    }
+
+    .myWork {
+        width: 60%;
+
+        h2 {
+            font-size: $modular-scale-3;
         }
     }
 }

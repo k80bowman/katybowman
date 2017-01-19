@@ -2,7 +2,8 @@
 layout: post
 title:  "Manassas"
 date:   2014-04-01
-category: Short Story
+type: Short Story
+category: work
 publication: "Circa: A Journal of Historical Fiction"
 link: https://circajournal.com/2014/04/01/manassas/
 image:

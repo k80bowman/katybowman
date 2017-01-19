@@ -2,27 +2,6 @@
     width: 90%;
     margin: 0 auto;
 
-    &--type {
-        color: $orange;
-        margin: 5px 10px;
-    }
-
-    hr {
-      width: 100%;
-      height: 1px;
-      background-color: $light-green;
-      margin: 10px auto 0 auto;
-    }
-
-    a:hover {
-        color: $orange;
-    }
-
-    .home--pubLink {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     &__primary {
         padding: 20px 0;
 
@@ -39,22 +18,6 @@
 
         &--quote {
             padding-top: 10px;
-        }
-    }
-
-    &__secondary {
-        padding: 10px 0;
-
-        li {
-            padding-bottom: 20px;
-        }
-
-        a:hover {
-            color: $orange;
-        }
-
-        &--quote {
-            padding: 10px;
         }
     }
 }
