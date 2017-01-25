@@ -6,6 +6,15 @@ $desktop-width: "(min-width: 1200px)";
         font-size: $modular-scale-4;
     }
 
+    h2 {
+        font-size: $modular-scale-3
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
 
 
     .contact {
@@ -34,7 +43,7 @@ $desktop-width: "(min-width: 1200px)";
     }
 
     .home {
-        width: 60%;
+        width: 50%;
 
         &__primary {
             &--image {
@@ -57,10 +66,6 @@ $desktop-width: "(min-width: 1200px)";
             margin: 10px 20px;
         }
 
-        &--pubLink, p {
-            font-size: 16px;
-        }
-
         &--quote {
             padding: 20px;
         }
@@ -77,17 +82,24 @@ $desktop-width: "(min-width: 1200px)";
             padding: 20px 0;
 
             p {
-                font-size: 16px;
                 margin: 20px auto;
             }
         }
     }
 
     .myWork {
-        width: 60%;
+        width: 50%;
+    }
 
-        h2 {
-            font-size: $modular-scale-3;
+    .myBlog {
+        width: 50%;
+    }
+
+    .blogPost {
+        width: 50%;
+
+        p {
+            margin: 20px 0;
         }
     }
 }

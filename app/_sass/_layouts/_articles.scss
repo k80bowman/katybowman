@@ -26,8 +26,9 @@
         padding-bottom: 20px;
     }
 
-    a:hover {
-        color: $orange;
+    &--date {
+        padding-top: 10px;
+        margin-left: 10px; 
     }
 
     &--quote {
