@@ -11,7 +11,7 @@
                     <li class="side"><a href="/" {% if page.url == '/' %} class="active" {% endif %} >Home</a></li>
                     <li class="middle"><a href="/mywork" {% if page.url == '/mywork/' %} class="active" {% endif %} >My Work</a></li>
                     <li class="middle"><a href="/mystory" {% if page.url == '/mystory/' %} class="active" {% endif %} >My Story</a></li>
-                    <li class="side"><a href="/myblog" {% if page.url == '/myblog/' %} class="active" {% endif %} >My Blog</a></li>
+                    <li class="side"><a href="/myblog" {% if page.url == '/myblog/' || page.category == 'blog' %} class="active" {% endif %} >My Blog</a></li>
                 </ul>
             </div>
         </div>

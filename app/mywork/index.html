@@ -10,9 +10,9 @@ layout: default
             {% for post in site.posts %}
             {% if post.category == 'work' %}
             <p class="articles--type">{{ post.type }}</p>
-            <h3 class="articles--title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+            <h3 class="articles--title"><a target="_blank" href="{{ post.link }}">{{ post.title }}</a></h2>
             <p class="articles--quote">{{ post.excerpt }}</p>
-            <div class="articles--pubLink"><a href="{{ post.pubLink }}">{{ post.publication }}</a></div>
+            <div class="articles--pubLink"><a target="_blank" href="{{ post.pubLink }}">{{ post.publication }}</a></div>
             <hr>
             {% endif %}
             {% endfor %}

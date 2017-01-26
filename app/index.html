@@ -7,12 +7,12 @@ layout: default
         <div class="home__primary">
             {% for post in site.posts limit:1 %}
             <p class="articles--type">{{ post.type }}</p>
-            <h2 class="home__primary--title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+            <h2 class="home__primary--title"><a target="_blank" href="{{ post.link }}">{{ post.title }}</a></h2>
             <div class="home__primary--imgQuote">
                 <img class= "home__primary--image" src = {{ post.image }} alt="{{ post.title }}">
                 <p class="home__primary--quote">{{ post.excerpt }}</p>
             </div>
-            <div class="articles--pubLink"><a href="{{ post.pubLink }}">{{ post.publication }}</a></div>
+            <div class="articles--pubLink"><a target="_blank" href="{{ post.pubLink }}">{{ post.publication }}</a></div>
             <hr>
             {% endfor %}
         </div>
@@ -24,10 +24,10 @@ layout: default
                 <li>
                     <p class="articles--type">{{ post.type }}</p>
                     <h3 class="articles--title">
-                        <a href="{{ post.link }}">{{ post.title }}</a>
+                        <a target="_blank" href="{{ post.link }}">{{ post.title }}</a>
                     </h3>
                     <p class="articles--quote">{{ post.excerpt }}</p>
-                    <div class="articles--pubLink"><a href="{{ post.pubLink }}">{{ post.publication }}</a></div>
+                    <div class="articles--pubLink"><a target="_blank" href="{{ post.pubLink }}">{{ post.publication }}</a></div>
                     <hr>
                 </li>
               {% endif %}

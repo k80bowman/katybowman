@@ -2,10 +2,10 @@
 
     <div class="footer__menu">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/mywork">My Work</a></li>
-            <li><a href="/mystory">My Story</a></li>
-            <li><a href="/myblog">My Blog</a></li>
+            <li><a href="/" {% if page.url == '/' %} class="active" {% endif %} >Home</a></li>
+            <li><a href="/mywork" {% if page.url == '/mywork/' %} class="active" {% endif %} >My Work</a></li>
+            <li><a href="/mystory" {% if page.url == '/mystory/' %} class="active" {% endif %} >My Story</a></li>
+            <li><a href="/myblog" {% if page.url == '/myblog/' || page.category == 'blog' %} class="active" {% endif %} >My Blog</a></li>
         </ul>
     </div>
 
@@ -15,7 +15,7 @@
     </div>
 
     <div class="copyright">
-        <p>&copy; 2016 Katy Bowman</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Katy Bowman</p>
     </div>
 
 </footer>
