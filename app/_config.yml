@@ -18,3 +18,5 @@ twitter_username: k80bowman
 
 # Build settings
 markdown: kramdown
+collections:
+    - work

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Morning Pages"
-date: 2011-04-18
+date: 2016-11-08
 type: Blog Post
 category: blog
 publication:
-link: 
+link:
 pubLink:
 image:
 excerpt: "Last week was a tough week for creative work. I had family coming in from out of town and I hosted dinner for 18 on Friday, which means my creative work really was just cooking. Which is fun for me. Especially since I was trying out a couple of new recipes this year (and they were successful!)."
