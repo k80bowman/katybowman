@@ -89,6 +89,10 @@ body {
   width: 90%;
   margin: 0 auto;
   padding: 30px 0; }
+  .blogPost img {
+    width: 80%;
+    display: block;
+    margin: 0 auto; }
   .blogPost__header h2 {
     text-align: center;
     margin-bottom: 20px; }
