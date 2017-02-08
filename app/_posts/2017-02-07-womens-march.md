@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I Was At the Women's March"
-date: 2017-02-05
+date: 2017-02-07
 type: Blog Post
 category: blog
 publication:
