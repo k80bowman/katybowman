@@ -24,7 +24,7 @@ layout: default
         <div class="home__secondary">
             <ul class="articles__workList">
                 {% assign works = site.work | reverse %}
-                {% for work in works limit:6 %}
+                {% for work in works limit:5 %}
                 {% if forloop.index > 1 %}
                 <li>
                     <p class="articles--type">{{ work.type }}</p>
