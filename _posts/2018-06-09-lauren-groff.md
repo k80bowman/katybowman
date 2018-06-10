@@ -8,7 +8,7 @@ publication:
 link:
 pubLink:
 image:
-excerpt: ""
+excerpt: "I read an interview on The New Yorker blog with Lauren Groff the other day and I realized that I need to read more of her work. And by more I mean any at all because, somehow, I have thus far missed out on her genius."
 ---
 
 I read an [interview on The New Yorker blog with Lauren Groff](https://www.theparisreview.org/blog/2018/06/05/my-own-boundaries-seem-to-be-fading-an-interview-with-lauren-groff/) the other day and I realized that I need to read more of her work. And by more I mean any at all because, somehow, I have thus far missed out on her genius.

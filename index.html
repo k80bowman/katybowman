@@ -23,7 +23,7 @@ layout: default
 
         <div class="home__secondary">
             <ul class="articles__workList">
-                {% for post in site.posts reversed limit:5 %}
+                {% for post in site.posts limit:5 %}
                 {% if post.category != "featured" %}
                 <li>
                     <p class="articles--type">{{ post.type }}</p>
@@ -31,7 +31,15 @@ layout: default
                         <a href="{{ post.link }}">{{ post.title }}</a>
                     </h3>
                     <p class="articles--quote">{{ post.excerpt }}</p>
-                    <div class="articles--pubLink"><a href="{{ post.pubLink }}">{{ post.publication }}</a></div>
+                    {% if post.category == "work" %}
+                    <div class="articles--pubLink">
+                        <a href="{{ post.pubLink }}">{{ post.publication }}</a>
+                    </div>
+                    {% else %}
+                    <div class="articles--pubLink">
+                        <a href="{{ post.pubLink }}">{{ post.date | date_to_long_string }}</a>
+                    </div>
+                    {% endif %}
                     <hr>
                 </li>
                 {% endif %}
