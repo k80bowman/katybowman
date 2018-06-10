@@ -3,7 +3,7 @@ layout: post
 title: "The Overneath"
 date: 2017-11-26
 type: Book Review
-category: work
+category: featured
 publication: "Washington Independent Review of Books"
 link: http://www.washingtonindependentreviewofbooks.com/index.php/bookreview/the-overneath
 pubLink: http://www.washingtonindependentreviewofbooks.com

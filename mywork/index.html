@@ -8,7 +8,7 @@ layout: default
     <div class="myWork__work">
         <div class="articles">
             {% for post in site.posts %}
-            {% if post.category == "work" %}
+            {% if post.category == "work" or post.category == "featured" %}
             <p class="articles--type">{{ post.type }}</p>
             <h3 class="articles--title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
             <p class="articles--quote">{{ post.excerpt }}</p>
