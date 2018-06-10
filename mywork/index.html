@@ -7,13 +7,14 @@ layout: default
 
     <div class="myWork__work">
         <div class="articles">
-            {% assign works = site.work | reverse %}
-            {% for work in works %}
-            <p class="articles--type">{{ work.type }}</p>
-            <h3 class="articles--title"><a href="{{ work.link }}">{{ work.title }}</a></h2>
-            <p class="articles--quote">{{ work.excerpt }}</p>
-            <div class="articles--pubLink"><a href="{{ post.pubLink }}">{{ work.publication }}</a></div>
+            {% for post in site.posts %}
+            {% if post.category == "work" %}
+            <p class="articles--type">{{ post.type }}</p>
+            <h3 class="articles--title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+            <p class="articles--quote">{{ post.excerpt }}</p>
+            <div class="articles--pubLink"><a href="{{ post.pubLink }}">{{ post.publication }}</a></div>
             <hr>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
