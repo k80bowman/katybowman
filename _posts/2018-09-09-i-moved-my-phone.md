@@ -22,7 +22,7 @@ For the last week, though, I have been simply getting up and getting ready. I wa
 
 And I feel a lot better. I'm able to get my kids out the door with a little less stress than before, I've been more positive about my day, and the less time I spend flipping through social media, the more impatient I get with it and the less time I actually _want_ to spend time with it.
 
-Sometimes it's the simplest, most obvious things that have the greatest affect.
+Sometimes it's the simplest, most obvious things that have the greatest effect.
 
 
 
